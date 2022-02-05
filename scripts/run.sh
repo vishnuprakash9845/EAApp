@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -env
+set -e
 set -x
 
 project="e2etest"
