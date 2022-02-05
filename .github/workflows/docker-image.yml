@@ -13,8 +13,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run Tests
       run: |
-        echo --Running Test cases --
-        run: docker-compose -f "docker-compose.yml" up -d --build
+        echo -- Running Test cases --
+        docker-compose -f "docker-compose.yml" up -d --build
     - name: stop containers
       if: ${{ always() }}
       run: docker-compose -f "docker-compose.yml" down
