@@ -4,7 +4,7 @@ set -e
 set -x
 
 until []; do
-    donet "$1" && break
+    dotnet "$1" && break
     sleep 1
 done
 
