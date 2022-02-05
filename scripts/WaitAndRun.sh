@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-set -envset -x
+set -env
+set -x
 
 until []; do
     donet "$1" && break
