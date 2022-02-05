@@ -14,3 +14,4 @@ RUN dotnet build "EAAppTest.csproj" -c Release -o /app/build
 FROM build AS Test
 WORKDIR "/src/EAAppTest"
 CMD ["dotnet", "test"]
+ENTRYPOINT [ "../scripts/WaitAndRun.sh" ]
